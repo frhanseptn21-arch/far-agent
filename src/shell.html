@@ -1,0 +1,82 @@
+<div class="app">
+  <header class="mobile-topbar" id="mobileTopbar">
+    <a class="brand" href="#beranda" aria-label="far-agent beranda">
+      <svg width="26" height="26" viewBox="0 0 30 30" aria-hidden="true">
+        <circle cx="7" cy="23" r="3.2" fill="var(--accent)"/>
+        <path d="M7 14.5a8.5 8.5 0 0 1 8.5 8.5" fill="none" stroke="var(--fg)" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M7 6a17 17 0 0 1 17 17" fill="none" stroke="var(--fg)" stroke-width="2.4" stroke-linecap="round" opacity=".45"/>
+      </svg>
+      <div class="brand-text">
+        <span class="brand-title">far<span>-</span>agent</span>
+      </div>
+    </a>
+    <div class="row">
+      <button class="theme-btn" id="mobileThemeToggle" type="button" aria-label="Ganti tema">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <nav class="rail" aria-label="Navigasi utama">
+    <a class="brand" href="#beranda" aria-label="far-agent beranda">
+      <svg width="32" height="32" viewBox="0 0 30 30" aria-hidden="true">
+        <circle cx="7" cy="23" r="3.5" fill="var(--accent)"/>
+        <path d="M7 14.5a8.5 8.5 0 0 1 8.5 8.5" fill="none" stroke="var(--fg)" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M7 6a17 17 0 0 1 17 17" fill="none" stroke="var(--fg)" stroke-width="2.6" stroke-linecap="round" opacity=".45"/>
+      </svg>
+      <div class="brand-text">
+        <span class="brand-title">far<span>-</span>agent</span>
+        <span class="brand-tag">AI Coding Workspace</span>
+      </div>
+    </a>
+
+    <div class="nav" id="nav">
+      <a href="#beranda" data-route="beranda">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v10h13V10"/></svg>
+        <span>Beranda</span>
+      </a>
+      <a href="#rencana" data-route="rencana">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>
+        <span>Rencana</span>
+        <span class="nav-badge" id="navPlansCount">0</span>
+      </a>
+      <a href="#chat" data-route="chat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12z"/></svg>
+        <span>Chat AI</span>
+      </a>
+      <a href="#desain" data-route="desain">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/></svg>
+        <span>Desain</span>
+      </a>
+      <a href="#template" data-route="template">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4z"/><path d="M16.5 13v7M13 16.5h7"/></svg>
+        <span>Template</span>
+      </a>
+      <a href="#pengaturan" data-route="pengaturan">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9M17 6l3 3M14.5 8.5l2 2"/></svg>
+        <span>Kunci API</span>
+      </a>
+    </div>
+
+    <div class="rail-foot">
+      <a class="engine" href="#pengaturan" id="engineCard" title="Pengaturan Model & Kunci API">
+        <div class="engine-head">
+          <span class="lbl">Mesin AI</span>
+          <i class="dot" id="engineDot"></i>
+        </div>
+        <span class="val" id="engineName">Memeriksa…</span>
+        <span class="mono" id="engineModel"></span>
+      </a>
+      <div class="rail-actions">
+        <button class="theme-btn" id="themeToggle" type="button" aria-label="Ganti tema">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+          <span id="themeLabel">Mode gelap</span>
+        </button>
+      </div>
+      <span class="hint" style="padding:0 4px;font-size:11px">Penyimpanan lokal di browser.</span>
+    </div>
+  </nav>
+
+  <main id="main"></main>
+</div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
